@@ -19,7 +19,6 @@ import {
   IoGameController,
   IoKeyOutline,
   IoLockClosed,
-  IoMusicalNotes,
   IoPeopleOutline,
   IoRefresh,
   IoSettingsOutline,
@@ -46,7 +45,6 @@ import {
   setSfxEnabledForSounds,
   useButtonSound,
 } from "../hooks/useButtonSound";
-import { useMenuMusic } from "../hooks/useMenuMusic";
 import { setSfxEnabledForPiece } from "../hooks/usePieceSound";
 import { setSfxEnabledForWall } from "../hooks/useWallSound";
 import { useAudioSettings } from "../state/audioSettings";
@@ -115,8 +113,7 @@ export default function HomeScreen() {
   useButtonSound();
   const navigate = useNavigate();
   const playerName = usePlayerName();
-  const { musicEnabled, sfxEnabled, setMusicEnabled, setSfxEnabled } = useAudioSettings();
-  useMenuMusic(musicEnabled);
+  const { sfxEnabled, setSfxEnabled } = useAudioSettings();
 
   // Modais de menu/config
   const [showPrivacy, setShowPrivacy] = useState(false);
@@ -601,9 +598,6 @@ export default function HomeScreen() {
               <div className="mb-2"><IoSettingsOutline size={32} color="#3D6FFF" /></div>
               <span className="text-lg font-extrabold text-navy mb-5">Configuracoes</span>
 
-              <SettingRow icon={<IoMusicalNotes size={20} color="#1A2A4A" />} label="Musica">
-                <Toggle active={musicEnabled} onToggle={() => setMusicEnabled(!musicEnabled)} />
-              </SettingRow>
               <SettingRow icon={<IoVolumeHigh size={20} color="#1A2A4A" />} label="Efeitos sonoros">
                 <Toggle active={sfxEnabled} onToggle={() => setSfxEnabled(!sfxEnabled)} />
               </SettingRow>

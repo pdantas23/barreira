@@ -49,7 +49,6 @@ vi.mock("../hooks/useButtonSound", () => ({
 }));
 vi.mock("../hooks/usePieceSound", () => ({ setSfxEnabledForPiece: vi.fn() }));
 vi.mock("../hooks/useWallSound", () => ({ setSfxEnabledForWall: vi.fn() }));
-vi.mock("../hooks/useMenuMusic", () => ({ useMenuMusic: vi.fn() }));
 vi.mock("../state/audioSettings", () => ({
   useAudioSettings: () => ({
     musicEnabled: false,
