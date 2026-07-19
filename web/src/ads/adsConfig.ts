@@ -12,7 +12,7 @@
  */
 
 /** ID do publisher */
-export const AD_CLIENT = "ca-pub-2366664885069425";
+export const AD_CLIENT = "ca-pub-2148516623176486";
 
 /**
  * Slot IDs para cada posição de anúncio.
