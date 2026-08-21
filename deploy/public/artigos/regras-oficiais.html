@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regras oficiais do Barreira comentadas, uma a uma</title>
+  <meta name="description" content="Cada regra do Barreira explicada com exemplos: movimento, colocação de paredes, a regra do caminho livre, salto e salto diagonal, e o relógio das partidas online.">
+  <meta name="keywords" content="barreira, quoridor, regras oficiais, salto diagonal, caminho livre, como jogar">
+  <link rel="canonical" href="https://barreirajogo.com/artigos/regras-oficiais">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Regras oficiais do Barreira comentadas, uma a uma">
+  <meta property="og:description" content="Cada regra do Barreira explicada com exemplos: movimento, colocação de paredes, a regra do caminho livre, salto e salto diagonal, e o relógio das partidas online.">
+  <meta property="og:url" content="https://barreirajogo.com/artigos/regras-oficiais">
+  <meta property="og:site_name" content="Barreira">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Regras oficiais do Barreira comentadas, uma a uma">
+  <meta name="twitter:description" content="Cada regra do Barreira explicada com exemplos: movimento, paredes, caminho livre, salto diagonal e relógio.">
+  <meta name="author" content="Equipe Barreira">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Regras oficiais do Barreira, comentadas uma a uma",
+    "name": "Regras oficiais do Barreira comentadas, uma a uma",
+    "description": "Cada regra do Barreira explicada com exemplos: movimento, colocação de paredes, a regra do caminho livre, salto e salto diagonal, e o relógio das partidas online.",
+    "inLanguage": "pt-BR",
+    "datePublished": "2026-08-09",
+    "dateModified": "2026-08-09",
+    "author": { "@type": "Organization", "name": "Equipe Barreira", "url": "https://barreirajogo.com/sobre" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Barreira",
+      "url": "https://barreirajogo.com/",
+      "logo": { "@type": "ImageObject", "url": "https://barreirajogo.com/photos/art.png" }
+    },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://barreirajogo.com/artigos/regras-oficiais" },
+    "url": "https://barreirajogo.com/artigos/regras-oficiais",
+    "isPartOf": { "@type": "Blog", "name": "Artigos do Barreira", "url": "https://barreirajogo.com/artigos" },
+    "about": { "@type": "Game", "name": "Barreira", "url": "https://barreirajogo.com/" }
+  }
+  </script>
+  <meta name="google-adsense-account" content="ca-pub-2148516623176486">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2148516623176486" crossorigin="anonymous"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; color: #1A2A4A; background: linear-gradient(180deg, #F0F4FF 0%, #E8EEF8 100%); min-height: 100vh; line-height: 1.7; }
+    h1 { font-size: 28px; margin-bottom: 4px; color: #1A2A4A; }
+    h2 { font-size: 18px; margin-top: 28px; margin-bottom: 8px; color: #3D6FFF; }
+    .lead { color: #9AAACA; font-size: 14px; margin-bottom: 8px; }
+    .meta-date { color: #9AAACA; font-size: 13px; margin-bottom: 28px; }
+    p { font-size: 15px; color: #1A2A4A; }
+    a { color: #3D6FFF; }
+    .card { background: white; border-radius: 12px; padding: 24px 28px; border: 1px solid #DDEAFF; box-shadow: 0 2px 8px rgba(26,42,74,0.06); }
+    .play-cta { display: inline-block; margin-top: 24px; padding: 12px 24px; background: linear-gradient(to right, #3D6FFF, #6B9FFF); color: white; text-decoration: none; font-weight: 800; border-radius: 10px; font-size: 14px; letter-spacing: 0.5px; }
+    .nav { margin-bottom: 16px; font-size: 13px; }
+    .nav a { color: #3D6FFF; text-decoration: none; }
+    .nav a:hover { text-decoration: underline; }
+    .foot { margin-top: 32px; text-align: center; color: #9AAACA; font-size: 13px; }
+    .foot a { color: #3D6FFF; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="/">← Início</a> · <a href="/regras">Regras</a> · <a href="/estrategias">Estratégias</a> · <a href="/artigos">Artigos</a> · <a href="/sobre">Sobre</a> · <a href="/suporte">Suporte</a> · <a href="/privacy">Privacidade</a>
+  </nav>
+  <h1>Regras oficiais do Barreira, comentadas uma a uma</h1>
+  <p class="lead">O regulamento completo em linguagem simples — e o motivo de cada regra existir.</p>
+  <p class="meta-date">Por <strong>Equipe Barreira</strong> · Publicado em 9 de agosto de 2026</p>
+  <div class="card">
+    <p>As regras do Barreira cabem em um parágrafo, mas cada uma delas tem uma consequência estratégica que só aparece depois de algumas partidas. Este guia percorre o regulamento inteiro na ordem em que ele importa durante um jogo — e, mais importante, explica <em>por que</em> cada regra existe. Se você quer apenas o resumo rápido, a página de <a href="/regras">regras</a> cobre o essencial; aqui vamos com calma.</p>
+
+    <h2>1. O tabuleiro e a posição inicial</h2>
+    <p>O jogo acontece em um tabuleiro de <strong>9x9 casas</strong>, com 81 posições. Cada jogador começa no meio de um dos lados opostos: um peão na casa central da primeira linha, o outro na casa central da última. Essa simetria é proposital — nenhum dos dois começa com vantagem posicional, e a única assimetria do jogo é quem joga primeiro.</p>
+    <p>Além do peão, cada jogador recebe <strong>dez paredes</strong> no começo da partida. Esse número não é arbitrário: dez é o suficiente para construir dois ou três desvios significativos, mas não o bastante para murar o tabuleiro inteiro. A escassez é o que transforma cada barreira em uma decisão.</p>
+
+    <h2>2. O objetivo</h2>
+    <p>Vence quem levar o próprio peão até <strong>qualquer casa da linha oposta</strong> — a linha de onde o adversário partiu. Note o detalhe: não é preciso chegar à casa exata do oponente, apenas alcançar a fileira. Isso significa que existem nove casas de chegada, e é por isso que bloquear alguém é tão difícil: você não precisa fechar uma porta, precisa fechar nove.</p>
+
+    <h2>3. Uma ação por turno: mover ou murar</h2>
+    <p>Esta é a regra central do jogo. No seu turno você escolhe <strong>uma</strong> de duas ações:</p>
+    <ul>
+      <li><strong>Mover o peão</strong> uma casa na horizontal ou na vertical (nunca na diagonal, salvo no caso do salto, explicado adiante).</li>
+      <li><strong>Colocar uma parede</strong> em uma intersecção livre do tabuleiro.</li>
+    </ul>
+    <p>Nunca as duas na mesma jogada. Essa restrição é o coração da tensão do Barreira: toda parede é um passo que você deixou de dar. É o conceito de custo de oportunidade que detalhamos nas <a href="/artigos/taticas-de-parede">táticas de parede</a>.</p>
+
+    <h2>4. Como as paredes funcionam</h2>
+    <p>Cada parede ocupa <strong>o equivalente a duas casas</strong> e é colocada na linha entre elas, na horizontal ou na vertical. Uma parede horizontal impede movimentos verticais que a atravessem; uma vertical impede movimentos horizontais. Uma vez colocada, a barreira é <strong>permanente</strong>: não se move, não se remove, não volta para a mão do jogador.</p>
+    <p>Duas restrições valem sempre: paredes não podem se sobrepor nem cruzar uma barreira já existente, e não podem ser colocadas parcialmente fora do tabuleiro. Na prática, isso significa que o espaço para murar diminui conforme a partida avança — mais um motivo para não gastar barreiras cedo demais.</p>
+
+    <h2>5. A regra do caminho livre</h2>
+    <p>Esta é a regra mais importante e a que mais confunde quem vem de outros jogos: <strong>nenhuma parede pode fechar completamente o caminho de um jogador até a linha de chegada</strong>. Sempre deve existir pelo menos uma rota, por mais longa que seja, para os dois peões.</p>
+    <p>O jogo valida isso automaticamente antes de aceitar cada barreira — se a colocação fecharia totalmente o trajeto de alguém, ela é recusada e o turno continua com você. Por isso não existe "prender" o adversário no Barreira. O que existe é <em>alongar</em> o caminho dele. Toda a estratégia de paredes nasce dessa distinção: você nunca bloqueia, você encarece.</p>
+
+    <h2>6. Salto e salto diagonal</h2>
+    <p>Quando os dois peões ficam em casas adjacentes, frente a frente, entra em cena a regra do salto. O jogador da vez pode <strong>pular por cima do peão adversário</strong>, aterrissando na casa imediatamente atrás dele — desde que essa casa exista e não haja parede no caminho.</p>
+    <p>E se houver? Aí vale o <strong>salto diagonal</strong>: quando o salto reto está impedido — seja por uma parede logo atrás do oponente, seja porque ali é a borda do tabuleiro — você pode mover o peão para uma das duas casas perpendiculares ao movimento, ou seja, na diagonal em relação à sua posição original. É a única situação em que um peão anda na diagonal.</p>
+    <p>Vale reforçar: o salto diagonal é uma <em>alternativa ao salto bloqueado</em>, não uma jogada livre. Ele só existe quando o pulo reto não é possível. Confundir isso é um dos deslizes que listamos nos <a href="/artigos/erros-comuns">erros comuns</a>.</p>
+
+    <h2>7. O relógio nas partidas online</h2>
+    <p>No modo <strong>Casual online</strong> e na <strong>Partida Rápida</strong>, cada jogador tem <strong>três minutos</strong> para a partida inteira. O relógio de um jogador corre apenas durante o próprio turno e para assim que ele joga. Se o tempo de alguém zera, a vitória vai para o adversário.</p>
+    <p>Esse formato muda o jogo de forma sutil: calcular o caminho mínimo com precisão custa segundos, e segundos são um recurso tão finito quanto as paredes. Jogadores experientes aprendem a decidir rápido nas primeiras jogadas — quase sempre avanços diretos — para guardar tempo de reflexão para o meio-jogo, quando as barreiras começam a aparecer. No modo <strong>Treino</strong>, offline contra a CPU, não há relógio: você pensa o quanto quiser.</p>
+
+    <h2>8. Quem começa e o que isso significa</h2>
+    <p>A partida começa com um dos jogadores definido pelo sistema. Ter o primeiro lance é uma vantagem pequena mas real: em uma corrida onde os dois estão a oito passos do objetivo, quem anda primeiro chega primeiro, tudo o mais igual. É justamente por isso que as paredes existem — elas são o mecanismo que permite ao segundo jogador reequilibrar a corrida. Se você começa atrás, sabe que em algum momento vai precisar gastar barreiras; planeje quais desde cedo, como discutimos no guia de <a href="/artigos/aberturas">aberturas</a>.</p>
+
+    <h2>9. Fim de partida</h2>
+    <p>A partida termina de quatro formas: alguém alcança a linha de chegada (vitória normal), o relógio de alguém zera (vitória por tempo), um jogador abandona a sala (vitória por W.O.) ou a conexão de alguém cai e não retorna dentro do prazo de reconexão. Não há empate no Barreira — como a regra do caminho livre garante que sempre existe rota para os dois, uma partida sempre pode ser concluída.</p>
+
+    <h2>Resumo prático</h2>
+    <p>Se você guardar apenas cinco frases deste guia, que sejam estas:</p>
+    <ul>
+      <li>Uma ação por turno: ou anda, ou mura.</li>
+      <li>Chegue a qualquer casa da linha oposta para vencer.</li>
+      <li>Paredes são permanentes e você tem só dez.</li>
+      <li>É impossível fechar totalmente o caminho de alguém — só alongá-lo.</li>
+      <li>O salto diagonal só existe quando o salto reto está bloqueado.</li>
+    </ul>
+    <p>Com isso você já pode jogar sem cometer erros de regra. Para transformar regras em resultado, siga para o <a href="/artigos/guia-iniciante">guia para iniciantes</a>, aprofunde nas <a href="/estrategias">estratégias</a> e consulte o <a href="/artigos/glossario">glossário</a> sempre que cruzar com um termo novo. Se ficou curioso sobre de onde vêm essas regras, a <a href="/artigos/historia-do-quoridor">história do Quoridor</a> conta essa parte.</p>
+
+    <div class="related-box" style="margin-top:32px;padding-top:20px;border-top:1px solid #DDEAFF">
+      <h2 style="margin-top:0">Leia também</h2>
+      <ul>
+        <li><a href="/artigos/guia-iniciante">Guia para iniciantes</a></li>
+        <li><a href="/artigos/taticas-de-parede">Táticas de parede</a></li>
+        <li><a href="/artigos/erros-comuns">7 erros comuns</a></li>
+      </ul>
+    </div>
+
+    <ins class="adsbygoogle" style="display:block; margin: 28px 0;" data-ad-client="ca-pub-2148516623176486" data-ad-slot="9953596385" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <a href="/" class="play-cta">JOGAR AGORA</a>
+  </div>
+  <div class="foot">© 2026 Barreira · <a href="/artigos">Todos os artigos</a> · <a href="/privacy">Privacidade</a></div>
+</body>
+</html>
